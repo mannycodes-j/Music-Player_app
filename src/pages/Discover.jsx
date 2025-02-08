@@ -1,4 +1,4 @@
-import { Error, Loader, Songcard } from '../components '
+import { Error, Loader, SongCard } from '../components'
 import { genres } from '../assets/constants'
 
 const Discover = () => {
@@ -24,8 +24,8 @@ const Discover = () => {
         </select>
       </div>
       <div className="flex flex-wrap sm:justify-start justify-center gap-8">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13].map((song, i) => (
-          <Songcard key={song.key} song={song} i={i} />
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((song, i) => (
+          <SongCard key={song.key} song={song} i={i} />
         ))}
       </div>
     </div>
